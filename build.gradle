@@ -49,7 +49,17 @@ buildscript {
       robolectric: 'org.robolectric:robolectric:4.0-alpha-3',
   ]
   repositories {
+    maven { url 'https://maven.aliyun.com/repository/public' }
+    maven { url 'https://maven.aliyun.com/repository/central' }
+    maven { url 'https://maven.aliyun.com/repository/google' }
+    maven { url 'https://maven.aliyun.com/repository/public' }
+    maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+    maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+    maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
     google()
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://dl.bintray.com' }
     maven { url 'https://plugins.gradle.org/m2/' }
     jcenter()
     // For binary compatibility validator.
@@ -83,12 +93,21 @@ subprojects {
   version = VERSION_NAME
 
   repositories {
+    maven { url 'https://maven.aliyun.com/repository/public' }
+    maven { url 'https://maven.aliyun.com/repository/central' }
+    maven { url 'https://maven.aliyun.com/repository/google' }
+    maven { url 'https://maven.aliyun.com/repository/public' }
+    maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+    maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+    maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
     google()
-    //    maven {
-    //      url 'https://oss.sonatype.org/content/repositories/snapshots/'
-    //    }
-    //    mavenLocal()
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://dl.bintray.com' }
+    maven { url 'https://plugins.gradle.org/m2/' }
     jcenter()
+    // For binary compatibility validator.
+    maven { url "https://kotlin.bintray.com/kotlinx" }
   }
 
   apply plugin: 'net.ltgt.errorprone'

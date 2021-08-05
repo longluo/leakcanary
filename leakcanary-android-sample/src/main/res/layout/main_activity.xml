@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2015 Square, Inc.
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,56 +13,53 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp"
-    >
+    android:orientation="vertical">
 
-  <TextView
-      android:id="@+id/helper_text"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginBottom="16dp"
-      android:text="@string/helper_text"
-      />
-  <Button
-      android:id="@+id/recreate_activity_button"
-      android:layout_width="wrap_content"
-      android:layout_gravity="center"
-      android:layout_height="wrap_content"
-      android:text="Recreate Activity"
-      />
-  <Button
-      android:id="@+id/leak_activity_button"
-      android:layout_width="wrap_content"
-      android:layout_gravity="center"
-      android:layout_height="wrap_content"
-      android:text="Leak Activity"
-      />
-  <Button
-      android:id="@+id/show_dialog_button"
-      android:layout_width="wrap_content"
-      android:layout_gravity="center"
-      android:layout_height="wrap_content"
-      android:text="Show dialog"
-      />
-  <Button
-      android:id="@+id/start_service_button"
-      android:layout_width="wrap_content"
-      android:layout_gravity="center"
-      android:layout_height="wrap_content"
-      android:text="@string/start_service_button_text"
-      />
-  <Button
-      android:id="@+id/leak_receiver_button"
-      android:layout_width="wrap_content"
-      android:layout_gravity="center"
-      android:layout_height="wrap_content"
-      android:text="Create &amp; leak Receiver"
-      />
+    <TextView
+        android:id="@+id/helper_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/helper_text" />
+
+    <Button
+        android:id="@+id/recreate_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Recreate Activity" />
+
+    <Button
+        android:id="@+id/leak_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Leak Activity" />
+
+    <Button
+        android:id="@+id/show_dialog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Show dialog" />
+
+    <Button
+        android:id="@+id/start_service_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/start_service_button_text" />
+
+    <Button
+        android:id="@+id/leak_receiver_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Create &amp; leak Receiver" />
 
 
 </LinearLayout>
